@@ -3,6 +3,7 @@ import streamlit as st
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 llm = Ollama(model="mistral:latest", base_url="http://localhost:11434", verbose=True)
+#llm = Ollama(model="deepseek-r1:7b", base_url="http://localhost:11434", verbose=True)
 
 def sendPrompt(prompt):
     global llm
